@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishaan Jha | Portfolio</title>
+    <meta name="description" content="Portfolio of Ishaan Jha - Digital Business and Data Science specialist from IIM Bangalore and IIT Madras. Frontend Engineer with expertise in Next.js, React, and Financial Simulations.">
+    <meta name="keywords" content="Ishaan Jha, Portfolio, IIM Bangalore, IIT Madras, Data Science, Digital Business, Founder's Office, Frontend Engineer, Next.js, React">
+    <title>Ishaan Jha | Digital Strategy & Product Architecture</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +19,10 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact-form-section">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +35,7 @@
                 <p class="tagline">Digital Business & Data Science | Frontend Engineer | Founder's Office Intern</p>
                 <p class="bio">I specialize in building high-performance, data-driven web applications and scaling digital systems. Currently pursuing dual degrees at IIM Bangalore and IIT Madras.</p>
                 <div class="cta-buttons">
-                    <a href="#experience" class="btn primary">View My Work</a>
+                    <a href="#projects" class="btn primary">View My Projects</a>
                     <a href="#contact" class="btn secondary">Get in Touch</a>
                 </div>
             </div>
@@ -44,25 +47,37 @@
         <!-- Education Section -->
         <section id="education">
             <h2 class="section-title">Education</h2>
-            <div class="education-grid">
-                <div class="edu-card">
-                    <div class="edu-year">2025 – 2028</div>
-                    <h3>BBA (Digital Business)</h3>
-                    <p class="institute">IIM Bangalore (IIMB)</p>
-                    <p class="focus">Focus: Digital Strategy & Ent. Finance</p>
-                </div>
-                <div class="edu-card">
-                    <div class="edu-year">2024 – 2028</div>
-                    <h3>B.S. (Data Science)</h3>
-                    <p class="institute">IIT Madras (IITM)</p>
-                    <p class="focus">Focus: Application Dev & Analytics</p>
-                </div>
-                <div class="edu-card">
-                    <div class="edu-year">2022 – 2024</div>
-                    <h3>Class XII (PCMB)</h3>
-                    <p class="institute">SR Global School</p>
-                    <p class="focus">Board: CBSE</p>
-                </div>
+            <div class="table-container">
+                <table class="education-table">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Degree / Qualification</th>
+                            <th>Institute</th>
+                            <th>Focus / Major</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025 – 2028</td>
+                            <td>BBA (Digital Business)</td>
+                            <td>IIM Bangalore (IIMB)</td>
+                            <td>Digital Strategy & Ent. Finance</td>
+                        </tr>
+                        <tr>
+                            <td>2024 – 2028</td>
+                            <td>B.S. (Data Science)</td>
+                            <td>IIT Madras (IITM)</td>
+                            <td>Application Dev & Analytics</td>
+                        </tr>
+                        <tr>
+                            <td>2022 – 2024</td>
+                            <td>Class XII (PCMB)</td>
+                            <td>SR Global School</td>
+                            <td>CBSE Board</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
@@ -70,7 +85,7 @@
         <section id="experience">
             <h2 class="section-title">Professional Experience</h2>
             <div class="timeline">
-                <div class="timeline-item">
+                <article class="timeline-item">
                     <div class="timeline-meta">
                         <span class="company">Hundred Plus</span>
                         <span class="duration">Feb 2026 – Present</span>
@@ -78,15 +93,16 @@
                     <div class="details">
                         <h3>Founder’s Office Intern (Remote)</h3>
                         <ul>
-                            <li><strong>"The Startup School" Platform:</strong> Architected the frontend using Next.js (App Router) & React; implemented responsive design systems and modular component structures.</li>
-                            <li><strong>Financial Logic & Simulations:</strong> Developed complex state management for high-fidelity financial math tools, including equity dilution (Cap Table) simulations.</li>
-                            <li><strong>API & Backend:</strong> Designed RESTful API routes in Next.js, integrating AI prompt engineering and contextual data indexing for investor matchmaking.</li>
-                            <li><strong>Data & Growth:</strong> Managed large-scale data transformations (CSV to JSON/TS) for 9,000+ entries and optimized Core Web Vitals via lazy loading and strategic SEO.</li>
+                            <li><strong>Frontend Architecture:</strong> Engineered high-performance interfaces using Next.js (App Router), React, and TypeScript; implemented responsive design systems for the "The Startup School" platform.</li>
+                            <li><strong>Logic & State:</strong> Developed complex state management systems and algorithmic filtering logic for high-fidelity financial math tools and equity dilution simulations (Cap Table).</li>
+                            <li><strong>API & Backend:</strong> Designed RESTful API routes in Next.js, incorporating AI prompt engineering and contextual data indexing to facilitate intelligent investor matchmaking.</li>
+                            <li><strong>Data Handling:</strong> Managed large-scale data transformations (CSV to JSON/TS) for databases involving 9,000+ entries; implemented robust PDF stream handling.</li>
+                            <li><strong>Performance & SEO:</strong> Optimized core web vitals via lazy loading and strategic asset management; architected SEO strategy using the Next.js Metadata API.</li>
                         </ul>
                     </div>
-                </div>
+                </article>
 
-                <div class="timeline-item">
+                <article class="timeline-item">
                     <div class="timeline-meta">
                         <span class="company">Feeding Trends</span>
                         <span class="duration">Dec 2025 – Jan 2026</span>
@@ -95,12 +111,12 @@
                         <h3>Operations Intern (Remote)</h3>
                         <ul>
                             <li>Spearheaded management of high-visibility social media handles using advanced analytics and scheduling tools.</li>
-                            <li>Optimized platform KPIs, maximizing algorithmic visibility and organic reach across community channels.</li>
+                            <li>Optimized platform KPIs by executing data-driven engagement strategies, maximizing algorithmic visibility across community channels.</li>
                         </ul>
                     </div>
-                </div>
+                </article>
 
-                <div class="timeline-item">
+                <article class="timeline-item">
                     <div class="timeline-meta">
                         <span class="company">Trade Ved</span>
                         <span class="duration">Aug 2025 – Sep 2025</span>
@@ -108,11 +124,51 @@
                     <div class="details">
                         <h3>Growth & Marketing Intern (Remote)</h3>
                         <ul>
-                            <li>Accelerated lead generation via high-volume cold outreach and tracking tools, significantly expanding the qualified prospect base.</li>
+                            <li>Accelerated lead generation via high-volume cold outreach campaigns and tracking tools, significantly expanding the qualified prospect base.</li>
                             <li>Authored high-conversion scripts for social media and coordinated promotional workshops for stakeholder logistics.</li>
                         </ul>
                     </div>
-                </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-info">
+                        <h3>The Startup School</h3>
+                        <p class="project-desc">A comprehensive platform for early-stage founders to manage equity, learn business fundamentals, and connect with investors.</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>React</span>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-info">
+                        <h3>FinSim Algorithm</h3>
+                        <p class="project-desc">High-fidelity financial simulation tool for calculating equity dilution and cap table scenarios with complex state management.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-info">
+                        <h3>Investor Matchmaking Engine</h3>
+                        <p class="project-desc">AI-driven indexing system that matches founders with the most relevant investors based on sector, stage, and thesis.</p>
+                        <div class="project-tech">
+                            <span>AI Prompt Engineering</span>
+                            <span>JSON/TS</span>
+                            <span>Data Indexing</span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
 
@@ -177,10 +233,35 @@
                 </div>
             </div>
         </section>
+
+        <!-- Contact Section with Form -->
+        <section id="contact-form-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="form-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subect">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer id="contact">
-        <h2 class="section-title">Contact Me</h2>
         <div class="footer-content">
             <p>Email: <a href="mailto:ishaanjha.in@gmail.com">ishaanjha.in@gmail.com</a></p>
             <p>LinkedIn: <a href="https://linkedin.com/in/ishaan-jha-2b6977340" target="_blank">ishaan-jha-2b6977340</a></p>
