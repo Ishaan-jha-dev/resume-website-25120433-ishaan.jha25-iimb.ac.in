@@ -363,3 +363,19 @@ footer {
     text-decoration: none;
 }
 
+/* Direct contact links styling */
+.direct-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.direct-links .btn {
+    text-transform: none;
+    font-size: 0.9rem;
+    margin: 0;
+    min-width: 120px;
+}
+
