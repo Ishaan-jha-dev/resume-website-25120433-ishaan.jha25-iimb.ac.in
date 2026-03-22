@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Submission - Ishaan Jha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #F3F4F6;
+            color: #111827;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 20mm auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            position: relative;
+            page-break-after: always;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 3px solid #F59E0B;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header-title h1 {
+            font-size: 28px;
+            font-weight: 800;
+            margin: 0;
+            color: #000;
+            letter-spacing: -1px;
+        }
+
+        .header-title p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #6B7280;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .student-meta {
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .student-meta div {
+            margin-bottom: 4px;
+        }
+
+        .links-bar {
+            background-color: #F9FAFB;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 5px solid #000;
+            margin-bottom: 30px;
+        }
+
+        .links-bar strong { font-size: 13px; color: #374151; }
+        .links-bar p { margin: 5px 0; font-size: 15px; }
+        .links-bar a { color: #2563EB; font-weight: 600; text-decoration: none; }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 800;
+            color: #000;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border-left: 4px solid #F59E0B;
+            padding-left: 12px;
+        }
+
+        .comparison-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .comp-header {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            color: #4B5563;
+        }
+
+        .comp-card {
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            padding: 15px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .comp-card.v1 { background-color: #FFF; border-style: dashed; }
+        .comp-card.midterm { background-color: #000; color: #FFF; }
+
+        .image-preview {
+            width: 100%;
+            height: 180px;
+            border-radius: 4px;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .feature-list {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        .feature-list li {
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: #374151;
+        }
+
+        .code-block {
+            background-color: #1F2937;
+            color: #E5E7EB;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            line-height: 1.6;
+            margin: 15px 0;
+            border-left: 4px solid #F59E0B;
+        }
+
+        .tag-pill {
+            display: inline-block;
+            background: #E5E7EB;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+
+        .tag-pill.gold { background: #FDE68A; color: #92400E; }
+
+        @media print {
+            body { background: white; }
+            .page { margin: 0; box-shadow: none; border: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1: COMPARISON & OVERVIEW -->
+    <div class="page">
+        <header class="header">
+            <div class="header-title">
+                <h1>MIDTERM SUBMISSION</h1>
+                <p>Website Enhancement Analysis</p>
+            </div>
+            <div class="student-meta">
+                <div><strong>Ishaan Jha</strong></div>
+                <div>Roll No: 25120433</div>
+                <div>Email: ishaan.jha25@iimb.ac.in</div>
+            </div>
+        </header>
+
+        <div class="links-bar">
+            <strong>OFFICIAL GITHUB PROJECT LINK:</strong>
+            <p><a href="https://github.com/ishaan-jha021/resume-website-25120433-ishaan.jha25-iimb.ac.in">github.com/ishaan-jha021/resume-website-25120433-ishaan.jha25-iimb.ac.in</a></p>
+            <p><strong>LIVE WEBSITE:</strong> <a href="https://ishaan-jha021.github.io/resume-website-25120433-ishaan.jha25-iimb.ac.in/">https://ishaan-jha021.github.io/resume-website-25120433-ishaan.jha25-iimb.ac.in/</a></p>
+        </div>
+
+        <h2>Module 3 (HTML) vs. Midterm (HTML+CSS) Evolution</h2>
+        <p style="font-size: 14px; color: #4B5563;">This project demonstrates the transformation of a fundamental HTML structural document into a premium digital portfolio using advanced CSS techniques.</p>
+
+        <div class="comparison-container">
+            <div>
+                <div class="comp-header">Version 1: Plain HTML</div>
+                <div class="comp-card v1">
+                    <div style="background-color: #eee; height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; border: 1px solid #ddd; color: #999;">[ HTML-Only View ]</div>
+                    <strong>Core Attributes:</strong>
+                    <ul>
+                        <li>Standard Times Roman font</li>
+                        <li>Black text on white background</li>
+                        <li>Vertical flow with no layout</li>
+                        <li>Default blue underlined links</li>
+                        <li>No interaction or glassmorphism</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="comp-header">Midterm: Enhanced CSS</div>
+                <div class="comp-card midterm">
+                    <div style="background-color: #111; height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; border: 1px solid #333; color: #FFD700;">[ Obsidian Noir Theme ]</div>
+                    <strong>Core Attributes:</strong>
+                    <ul>
+                        <li>Custom 'Outfit' Google Font</li>
+                        <li>Premium Dark Theme palette</li>
+                        <li>Flexbox & Grid Layouts</li>
+                        <li>Interactive hover states</li>
+                        <li>Mobile Responsive design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2>Technical Improvements Breakdown</h2>
+        <div class="feature-list">
+            <li><strong>Typography System:</strong> Integrated Google Fonts ('Outfit') for a modern, executive look. Controlled font-weight and line-height for readability.</li>
+            <li><strong>Layout Architecture:</strong> Replaced linear vertical stacking with a 3-column symmetric Grid for Skills and a Flexbox-based sticky Navigation Bar.</li>
+            <li><strong>Theming & Palette:</strong> Implemented "Obsidian Noir" (Dark Theme) using consistent HSL color tokens and gold highlights (#FFD700).</li>
+        </div>
+
+        <div style="position: absolute; bottom: 20mm; left: 20mm; font-size: 11px; color: #999;">Page 1 of 2</div>
+    </div>
+
+    <!-- PAGE 2: CODE HIGHLIGHTS -->
+    <div class="page">
+        <h2>Technical Deep-Dive: Styling Improvements</h2>
+
+        <div class="feature-item">
+            <h3 style="font-size: 15px; margin-bottom: 5px;">Implementation of Symmetric Skills Grid</h3>
+            <p style="font-size: 13px; color: #666; margin-top: 0;">Transitioned from simple &lt;ul&gt; bullets to a complex interactive grid layout.</p>
+            <div class="code-block">
+/* Symmetric 3-Column Layout */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 50px 0;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <h3 style="font-size: 15px; margin-bottom: 5px;">Premium Responsive Navigation</h3>
+            <p style="font-size: 13px; color: #666; margin-top: 0;">Added sticky positioning with blur-effect backdrop for a high-end app feel.</p>
+            <div class="code-block">
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <h3 style="font-size: 15px; margin-bottom: 5px;">Experience Timeline & Positioning</h3>
+            <p style="font-size: 13px; color: #666; margin-top: 0;">Developed a custom vertical timeline using pseudo-elements and relative positioning.</p>
+            <div class="code-block">
+.timeline-item {
+    position: relative;
+    padding-left: 35px;
+    border-left: 2px solid #FFD700;
+    margin-bottom: 50px;
+    transition: opacity 0.5s ease;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background: #FFD700;
+}
+            </div>
+        </div>
+
+        <div style="background: #F9FAFB; padding: 20px; border-radius: 8px; margin-top: 40px; border: 1px solid #E5E7EB;">
+            <p style="font-size: 13px; line-height: 1.6; margin: 0; font-style: italic;">"By utilizing CSS Selectors (Class, ID, and Element), I moved from a tagged-text document to a product-architected interface. The use of variables and selectors ensures that the site is not only beautiful but also maintainable and scalable."</p>
+        </div>
+
+        <div style="position: absolute; bottom: 20mm; left: 20mm; font-size: 11px; color: #999;">Page 2 of 2</div>
+        <div style="position: absolute; bottom: 20mm; right: 20mm; font-size: 12px; font-weight: 700; color: #F59E0B;">IIM BANGALORE | 2026</div>
+    </div>
+
+</body>
+</html>
