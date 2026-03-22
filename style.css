@@ -1,44 +1,46 @@
 /* 
    ---------------------------------------------------------
-   PROPRIETARY ARCHITECTURAL UI: ISHAAN JHA EDITION
-   Hand-crafted for High-Fidelity Professional Showcase
+   PROPRIETARY ARCHITECTURAL UI: ISHAAN JHA | DARK EDITION
+   Hand-crafted for Executive High-Fidelity Professionalism
    ---------------------------------------------------------
 */
 
 :root {
-    --bg-main: #ffffff;
-    --bg-sub: #fdfdfd;
+    --bg-main: #000000;
+    --bg-sub: #0a0a0a;
     --gold: #ffd700;
-    --noir: #000000;
-    --grey-text: #555;
-    --grey-light: #ececec;
-    --tr-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    --white: #ffffff;
+    --grey-text: #888888;
+    --grey-border: #222222;
+    --card-bg: #050505;
+    --tr-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     --tr-fast: all 0.2s ease-out;
 }
 
-/* Global Foundations */
+/* Global Reset & Body Foundations */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
     font-family: 'Outfit', sans-serif;
-    color: var(--noir);
     background: var(--bg-main);
+    color: var(--white);
     line-height: 1.7;
     counter-reset: sec;
 }
 
-/* Navigation - Minimalist Noir */
+/* Navigation - Obsidian Blur */
 header {
     position: sticky;
     top: 0;
-    background: rgba(255,255,255,0.98);
-    backdrop-filter: blur(10px);
-    border-top: 8px solid var(--gold);
-    border-bottom: 1px solid var(--grey-light);
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(20px);
+    border-top: 6px solid var(--gold);
+    border-bottom: 1px solid var(--grey-border);
     z-index: 9999;
 }
 
@@ -51,7 +53,13 @@ nav {
     align-items: center;
 }
 
-.logo { font-size: 1.5rem; font-weight: 800; text-transform: uppercase; letter-spacing: -1px; }
+.logo { 
+    font-size: 1.6rem; 
+    font-weight: 800; 
+    text-transform: uppercase; 
+    letter-spacing: -1px; 
+    color: var(--white);
+}
 
 .nav-links { display: flex; list-style: none; gap: 2.5rem; }
 .nav-links a { 
@@ -62,146 +70,160 @@ nav {
     letter-spacing: 2px;
     transition: var(--tr-fast);
 }
-.nav-links a:hover { color: var(--noir); }
+.nav-links a:hover { color: var(--gold); }
 
 /* Section Architecture */
-section { padding: 8rem 2rem; max-width: 1100px; margin: 0 auto; }
+section { padding: 9rem 2rem; max-width: 1100px; margin: 0 auto; }
 
 .section-title {
     font-size: 2.5rem;
     font-weight: 800;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
     display: flex;
     align-items: center;
     text-transform: uppercase;
+    color: var(--white);
 }
 
 .section-title::before {
     content: "0" counter(sec);
     counter-increment: sec;
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: var(--gold);
-    margin-right: 30px;
+    margin-right: 35px;
     font-weight: 300;
+    opacity: 0.8;
 }
 
-/* Hero Section - High Polish */
+/* Hero Section - The Gold Standard */
 .hero { display: flex; align-items: center; justify-content: space-between; min-height: 85vh; }
-.hero-content h1 { font-size: 5rem; line-height: 1.05; font-weight: 800; margin-bottom: 2rem; }
-.hero .accent { position: relative; z-index: 1; }
-.hero .accent::after {
-    content: "";
-    position: absolute;
-    bottom: 10%;
-    left: -2%;
-    width: 104%;
-    height: 18px;
-    background: var(--gold);
-    z-index: -1;
-}
+.hero-content h1 { font-size: 5.5rem; line-height: 1; font-weight: 800; margin-bottom: 2rem; color: var(--white); }
+.hero .accent { position: relative; z-index: 1; color: var(--gold); }
 
-.tagline { font-size: 1.5rem; color: var(--grey-text); margin-bottom: 2.5rem; }
-.profile-img { width: 400px; height: 400px; object-fit: cover; box-shadow: 25px 25px 0 var(--gold); }
+.tagline { font-size: 1.6rem; color: var(--grey-text); margin-bottom: 3rem; }
+.hero-image { position: relative; }
+.profile-img { 
+    width: 420px; 
+    height: 420px; 
+    object-fit: cover; 
+    border-radius: 4px;
+    box-shadow: 25px 25px 0 var(--gold);
+    filter: brightness(0.95) contrast(1.1);
+}
 
 .btn {
-    padding: 1.3rem 2.5rem;
+    padding: 1.4rem 2.8rem;
     text-decoration: none;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.8rem;
+    letter-spacing: 2.5px;
+    font-size: 0.85rem;
     transition: var(--tr-smooth);
     display: inline-block;
 }
-.btn.primary { background: var(--noir); color: white; margin-right: 1.5rem; }
-.btn.secondary { border: 3px solid var(--noir); color: var(--noir); }
-.btn:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+.btn.primary { background: var(--gold); color: var(--noir); margin-right: 1.5rem; font-weight: 900; }
+.btn.secondary { border: 3px solid var(--white); color: var(--white); }
+.btn:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(255, 215, 0, 0.15); }
 
-/* Symmetric Expertise - Precision Alignment */
+/* Experience & Projects (Dark Cards) */
+.timeline-item, .project-card {
+    background: var(--card-bg);
+    padding: 4rem;
+    border: 1px solid var(--grey-border);
+    border-left: 10px solid var(--gold);
+    margin-bottom: 4rem;
+    transition: var(--tr-smooth);
+}
+.timeline-item:hover, .project-card:hover { 
+    transform: translateY(-12px); 
+    box-shadow: 0 40px 100px rgba(0,0,0,0.4); 
+    border-color: #333;
+}
+
+.company, .project-card h3 { font-size: 1.8rem; font-weight: 800; color: var(--white); margin-bottom: 1rem; }
+.duration { display: block; color: var(--gold); font-weight: 700; font-size: 0.9rem; margin-bottom: 2rem; }
+.details ul { list-style: none; }
+.details li { color: #bcbcbc; margin-bottom: 1.2rem; position: relative; padding-left: 25px; }
+.details li::before { content: "→"; position: absolute; left: 0; color: var(--gold); }
+
+/* Symmetric Expertise - Dark Precision */
 .skills-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4rem; }
 
 .skill-category h3 {
-    min-height: 4.5rem; /* Forces consistent vertical height for alignment */
+    height: 5rem;
     display: flex;
     align-items: flex-end;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     line-height: 1.2;
     margin-bottom: 2.5rem;
     border-bottom: 5px solid var(--gold);
     padding-bottom: 1.2rem;
-    width: 100%; /* Ensures horizontal lines are symmetrical in width */
+    width: 100%;
+    color: var(--white);
 }
 
-.skill-category li { list-style: none; margin-bottom: 0.8rem; font-weight: 500; color: #333; }
+.skill-category li { list-style: none; margin-bottom: 1rem; font-weight: 600; color: #999; }
 
-/* Experience & Projects */
-.timeline-item, .project-card {
-    background: white;
-    padding: 3.5rem;
-    border: 1px solid var(--grey-light);
-    border-left: 10px solid var(--gold);
-    margin-bottom: 3.5rem;
-    transition: var(--tr-smooth);
-}
-.timeline-item:hover, .project-card:hover { transform: translateY(-10px); box-shadow: 0 40px 80px rgba(0,0,0,0.06); }
+/* Education Matrix */
+.education-table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+.education-table th { text-align: left; color: #555; text-transform: uppercase; font-size: 0.8rem; padding: 2rem; border-bottom: 1px solid var(--grey-border); }
+.education-table td { padding: 2rem; border-bottom: 1px solid var(--grey-border); color: #ccc; }
 
-/* Boutique Contact Interface - ZERO Overlap Protocol */
+/* Boutique Contact - Obsidian Form */
 .contact-box {
-    max-width: 700px;
+    max-width: 750px;
     margin: 0 auto;
-    padding: 5rem;
-    background: white;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.04);
+    padding: 6rem;
+    background: var(--card-bg);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.5);
     border-left: 15px solid var(--gold);
 }
 
-.contact-box h3 { font-size: 2.2rem; font-weight: 800; margin-bottom: 1rem; }
-.contact-box p { margin-bottom: 4.5rem; color: var(--grey-text); }
+.contact-box h3 { font-size: 2.4rem; font-weight: 800; margin-bottom: 1rem; color: var(--white); }
+.contact-box p { margin-bottom: 5rem; color: var(--grey-text); font-size: 1.2rem; }
 
-.form-group {
-    margin-bottom: 3.5rem; /* Ample spacing between fields */
-    display: block !important;
-    width: 100%;
-}
+.form-group { margin-bottom: 4rem; display: block !important; width: 100%; }
 
 .form-group label {
-    display: block !important; /* Forces label to its own row ABOVE the input */
-    font-size: 0.8rem;
+    display: block !important;
+    font-size: 0.85rem;
     font-weight: 800;
-    color: #999;
+    color: #666;
     text-transform: uppercase;
-    letter-spacing: 2.5px;
-    margin-bottom: 1.2rem; /* Clear vertical gap to input */
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
 }
 
 .form-group input, .form-group textarea {
-    display: block !important; /* Stacked under the label */
+    display: block !important;
     width: 100% !important;
     border: none;
-    border-bottom: 2px solid var(--grey-light);
-    padding: 1rem 0;
+    border-bottom: 2px solid var(--grey-border);
+    padding: 1.2rem 0;
     font-family: inherit;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     background: transparent;
+    color: var(--white);
     transition: var(--tr-fast);
 }
 
 .form-group input:focus, .form-group textarea:focus {
-    border-bottom: 3px solid var(--noir);
+    border-bottom: 3px solid var(--gold);
     outline: none;
 }
 
-/* Footer & Socials */
-footer { background: var(--noir); color: white; padding: 7rem 2rem; text-align: center; }
-.social-links { margin-top: 3rem; display: flex; justify-content: center; gap: 3rem; }
-.social-links a { color: var(--gold); text-decoration: none; font-weight: 800; font-size: 0.9rem; }
+/* Footer & Global Socials */
+footer { background: #000; color: #333; padding: 8rem 2rem; text-align: center; border-top: 1px solid var(--grey-border); }
+.social-links { margin-top: 4rem; display: flex; justify-content: center; gap: 4rem; }
+.social-links a { color: var(--gold); text-decoration: none; font-weight: 800; font-size: 1rem; letter-spacing: 2px; }
+.social-links a:hover { filter: brightness(1.3); }
 
-/* Mobile Stability */
+/* Responsive Adaptability */
 @media (max-width: 900px) {
     .hero { flex-direction: column-reverse; text-align: center; }
-    .hero-content h1 { font-size: 3.5rem; }
-    .profile-img { margin-left: 0; margin-bottom: 4rem; width: 300px; height: 300px; }
+    .hero-content h1 { font-size: 4rem; }
+    .profile-img { margin-left: 0; margin-bottom: 4rem; width: 320px; height: 320px; }
     .skills-container { grid-template-columns: 1fr; }
-    .contact-box { padding: 3rem 1.5rem; }
+    .contact-box { padding: 4rem 2rem; }
 }
